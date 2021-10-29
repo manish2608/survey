@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Survey Form</title>
+    <style>
+        body {
+            margin: 0px;
+            background-image: url("pexels-photo-4551832.jpeg");
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            text-align: center;
+            padding: 80px;
+        }
+        
+        #container {
+            position: absolute;
+            color: yellow;
+            box-shadow: 0 0 50px black;
+            width: 50%;
+            height: 90vh;
+            margin: 5% 20% 5% 20%;
+        }
+        
+        button:hover {
+            color: black;
+            background-color: cornflowerblue;
+            opacity: 0.3;
+        }
+        
+        body:hover div {
+            position: absolute;
+            color: yellow;
+            box-shadow: 0 0 50px black;
+            backdrop-filter: blur(50px);
+        }
+        
+        div:hover h1 {
+            background-color: yellow;
+            opacity: 0.3;
+        }
+        
+        form {
+            text-size-adjust: 40px;
+            padding-inline: 40px;
+        }
+        
+        .c1 {
+            color: turquoise;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="container" style="text-align: justify;">
+        <form>
+            <h1 style="color: red; text-align: center">Manish's Indian Food Survey</h1>
+            <label class="c1"><strong>Name</strong></label>
+            <input type="text" name="name" placeholder="enter your name" required minlength="3" pattern="[a-Z]" /><br><br>
+            <label class="c1" minlength="10" maxlength="10"><strong>Phone Number</strong></label>
+            <select id="selector">
+            <option value="+91" selected>+91</option>
+        </select><input type="tel" minlength="10" /><br><br>
+            <label for="Selector" class="c1"><strong>Gender</strong></label>
+            <select id="Selector">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select> <br><br>
+            <label class="c1"><strong>Select the Food</strong></label>
+            <input type="Checkbox" />
+            <label>Sweets</label>
+            <input type="Checkbox" />
+            <label>Curries</label>
+            <input type="Checkbox" />
+            <label>Tiffins</label>
+            <input type="Checkbox" />
+            <label>Dals</label><br><br>
+            <label class="c1"><strong>Quality</strong></label>
+            <input type="radio" name="Quality" />
+            <label>Excellent</label>
+            <input type="radio" name="Quality" />
+            <label>Good</label>
+            <input type="radio" name="Quality" />
+            <label>Poor</label>
+            <br><br>
+            <label class="c1"><strong>Service</strong></label>
+            <input type="radio" name="Service" />
+            <label>Excellent</label>
+            <input type="radio" name="Service" />
+            <label>Good</label>
+            <input type="radio" name="Service" />
+            <label>Poor</label>
+            <br><br>
+            <label class="c1"><strong>Cleanliness</strong></label>
+            <input type="radio" name="Cleanliness" />
+            <label>Excellent</label>
+            <input type="radio" name="Cleanliness" />
+            <label>Good</label>
+            <input type="radio" name="Cleanliness" />
+            <label>Poor</label>
+            <br><br>
+            <label class="c1"><strong>Dining Environment</strong></label>
+            <input type="radio" name="Dining Environment" />
+            <label>Excellent</label>
+            <input type="radio" name="Dining Environment" />
+            <label>Good</label>
+            <input type="radio" name="Dining Environment" />
+            <label>Poor</label> <br><br>
+            <label class="c1"><strong>Age</strong></label>
+            <input type="Checkbox" />
+            <label>Below 18</label>
+            <input type="Checkbox" />
+            <label>Above 18</label><br><br>
+            <label class="c1">Suggestion</label><br>
+            <textarea style="margin:5px" cols="33" rows="5"></textarea>
+            <br><br>
+            <input type="Reset" value="Reset" />
+            <button>Submit</button>
+        </form>
+
+    </div>
+
+</body>
+
+</html>
